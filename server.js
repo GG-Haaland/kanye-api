@@ -9,7 +9,7 @@ const cors = require('cors');
 // const { MongoClient } = require('mongodb');
 // require() imports and middleware here ^ ///////
 
-const PORT = process.env.PORT || 3023;
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 app.use(cors());
