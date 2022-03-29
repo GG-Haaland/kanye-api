@@ -18,7 +18,7 @@ const getAlbumById = async (req, res) => {
         const { id } = req.params;
         const album = await Album.findById(id)
         if (album) {
-            return res.status(200).json({ album });
+            return res.send(album)
         }
         return res.status(404).send('album with the specified ID does not exists');
     } catch (error) {
